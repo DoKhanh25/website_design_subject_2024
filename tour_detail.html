@@ -1,0 +1,1085 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/tour_detai.css">
+    <link rel="stylesheet" href="./assets/css/tour_detail2.css">
+    <link rel="stylesheet" href="./assets/css/tour_detail3.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+    <link rel="stylesheet" href="assets/VT/static/css/main.f0591598.css">
+    <link rel="stylesheet" href="assets/VT/font/css2.css">
+    <link rel="stylesheet" href="assets/VT/lib/swal.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
+    <title>Hoang Nam Travel</title>
+</head>
+  <body>
+    <div id="fb-root"></div>
+    <div id="root">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" id="logoheader" href="#"><img src="assets/main/logo.png" alt="logo" width="150" height="50" loading="lazy" /></a>
+                    <div class="navbar-collapse offcanvas-collapse left" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown me-4"><a class="nav-link" href="./index.html" role="button">Trang chủ</a></li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle travel-menu" href="#" data-bs-toggle="dropdown" aria-expanded="false">Du lịch</a>
+                                <div class="dropdown-menu megamenu" role="menu" data-bs-popper="none">
+                                    <div class="row py-lg-5">
+                                        <div class="col-2 text-center">
+                                            <ul class="list-unstyled menu-tab-items">
+                                                <li class="active" value="1">Du lịch trong nước</li>
+                                                <li class="" value="2">Du lịch nước ngoài</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-10 col-md-12 mx-auto">
+                                            <div class="col-lg-9 col-md-9 menu-tab-panels">
+                                                <div class="row g-3 active text-center">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền Bắc</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="/tour_list.html" name="29">Du lịch Hà Nội</a></li>
+                                                                <li><a href="/tour_list.html" name="32">Du lịch Hạ Long</a></li>
+                                                                <li><a href="/tour_list.html" name="33">Du lịch Bắc Ninh</a></li>
+                                                                <li><a href="/tour_list.html" name="34">Du lịch Phú Thọ</a></li>
+                                                                <li><a href="/tour_list.html" name="35">Du lịch Ninh Bình</a></li>
+                                                                <li><a class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền Trung</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="/tour_list.html" name="39">Du lịch Huế</a></li>
+                                                                <li><a href="/tour_list.html" name="40">Du lịch Quảng Bình</a></li>
+                                                                <li><a href="/tour_list.html" name="41">Du lịch Quảng Trị</a></li>
+                                                                <li><a href="/tour_list.html" name="42">Du lịch Quảng Nam</a></li>
+                                                                <li><a href="/tour_list.html" name="43">Du lịch Đà Nẵng</a></li>
+                                                                <li><a href="/tour_list.html" name="44">Du lịch Thanh Hóa</a></li>
+
+                                                                <li><a class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền Tây Nam Bộ</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="/tour_list.html" name="54">Du lịch Phú Quốc</a></li>
+                                                                <li><a href="/tour_list.html"  name="55">Du lịch Tiền Giang</a></li>
+                                                                <li><a href="/tour_list.html" name="56">Du lịch Cần Thơ</a></li>
+                                                                <li><a href="/tour_list.html" name="57">Du lịch Vĩnh Long</a></li>
+                                                                <li><a href="/tour_list.html" name="58">Du lịch Sóc Trăng</a></li>
+                                                                <li><a class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền Đông Nam Bộ</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="/tour_list.html" name="52">Du lịch Đồng Nai</a></li>
+                                                                <li><a href="/tour_list.html" name="53">Du lịch Bà Rịa - Vũng Tàu</a></li>
+                                                                <li><a href="/tour_list.html" name="197">Du lịch TP. Hồ Chí Minh</a></li>
+                                                                <li><a href="/tour_list.html" name="192">Du lịch Côn Đảo</a></li>
+                                                                <li><a href="/tour_list.html" name="203">Du lịch Tây Ninh</a></li>
+                                                                <li><a href="/tour_list.html" class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown me-4">
+                                <a class="nav-link dropdown-toggle transport-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vận chuyển</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#" target="_blank">Thuê xe</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank">Vé máy bay</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown me-4">
+                                <a class="nav-link dropdown-toggle news-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tin tức</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Tin mới</a></li>
+                                    <li><a class="dropdown-item" href="#">Tin tức du lịch</a></li>
+                                    <li><a class="dropdown-item" href="#">Cẩm nang du lịch</a></li>
+                                    <li><a class="dropdown-item" href="#">Kinh nghiệm du lịch</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"> Liên hệ </a></li>
+                        </ul>
+                      
+                    </div>
+                </div>
+            </nav>
+        </header>
+      <div class="flight-hotel-detail detail tour-detail">
+        <div class="container">
+          <div class="row">
+            <ul class="breadcrumbs__wrapper d-flex align-items-center" itemtype="http://schema.org/BreadcrumbList">
+              <li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="https://travel.com.vn" itemprop="item"><span itemprop="name">Du lịch</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              » 
+              <li><i class="icon icon--chevron - right px - 2"></i></li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="https://travel.com.vn/du-lich-viet-nam.aspx" itemprop="item"><span itemprop="name">Du lịch trong nước</span></a>
+                <meta itemprop="position" content="2">
+              </li>
+              » 
+              <li><i class="icon icon--chevron - right px - 2"></i></li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="https://travel.com.vn/du-lich-viet-nam/tour-mien-bac.aspx" itemprop="item"><span itemprop="name">Tour Miền Bắc</span></a>
+                <meta itemprop="position" content="3">
+              </li>
+              » 
+              <li><i class="icon icon--chevron - right px - 2"></i></li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="https://travel.com.vn/du-lich-ha-noi.aspx" itemprop="item"><span itemprop="name">Du lịch Hà Nội</span></a>
+                <meta itemprop="position" content="4">
+              </li>
+              » 
+              <li><i class="icon icon--chevron - right px - 2"></i></li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="https://travel.com.vn/tour/🔥-ha-noi-bai-dinh-khu-du-lich-trang-an-bai-dinh-ha-long-yen-tu-khach-san-4-sao.aspx" itemprop="item"><span itemprop="name">🔥 Hà Nội - Bái Đính - Khu Du Lịch Tràng An - Bái Đính - Hạ Long - Yên Tử (Khách sạn 4 sao)</span></a>
+                <meta itemprop="position" content="5">
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="entry-head">
+          <section class="section-01-title section-01">
+            <div class="container-xl">
+              <div class="row">
+                <div class="col-md-6 col-12 left">
+                  <div class="warp-mark"><i class="fal fa-ticket"></i><label>NDDNG2640-001-040424VU-V</label></div>
+                  <h1 class="title">🔥 Hà Nội - Bái Đính - Khu Du Lịch Tràng An - Bái Đính - Hạ Long - Yên Tử (Khách sạn 4 sao)</h1>
+                  <div class="short-rating">
+                    <div class="s-rate">
+                      <span>9</span>
+                      <div class="s-comment">
+                        Tuyệt vời
+                        <p>358 quan tâm</p>
+                      </div>
+                    </div>
+                    <div class="s-wishlist"><i class="fas fa-heart"></i><label> 126</label></div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 right">
+                  <div class="group-price">
+                    <div class="sale-price">
+                      <p><span class="price">7.490.000&nbsp;₫</span>/ khách</p>
+                    </div>
+                  </div>
+                  <div class="group-add-cart"><a title="Đặt ngay" href="#" class="add-to-cart"><i class="fal fa-shopping-cart"></i>Đặt ngay</a><a href="#" class="add-to-group">Liên hệ tư vấn</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-02 ">
+            <div class="container ">
+              <div class="row animate__fadeIn animate__animated">
+                <div class="col-lg-7 col-md-12 col-sm-12 left ">
+                  <div class="image"><img src="https://media.travel.com.vn/Tour/tfd_230322093243_935409.jpg" class="img-fluid" alt="image"></div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 right">
+                  <div class="row gy-4">
+                    <div class="col-md-12 col-12 small">
+                      <div class="row mb-2">
+                        <div class="col-6">
+                          <div class="image"><img src="https://media.travel.com.vn/Tour/tfd_230322092701_780641.jpg" class="img-fluid" alt="image"></div>
+                        </div>
+                        <div class="col-6">
+                          <div class="image"><img src="https://media.travel.com.vn/Tour/tfd_230322095842_392573.jpg" class="img-fluid" alt="image"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-12 big">
+                      <div class="image"><img src="https://media.travel.com.vn/Tour/tfd_230322100520_135149.jpg" class="img-fluid" alt="image"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="overview active">
+            <section class="section-03 mb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-5 col-12 left">
+                    <div class="box-order">
+                      <div class="time">
+                        <p>Khởi hành <b> 04/04/2024 - Giờ đi: 09:04</b></p>
+                        <p>Tập trung <b>00:04 ngày 04/04/2024</b></p>
+                        <p>Thời gian <b>4 ngày</b></p>
+                        <p>Nơi khởi hành <b>Đà Nẵng</b></p>
+                        <p>Số chỗ còn nhận <b>4</b></p>
+                      </div>
+                      <div class="calendar">
+                        <div class="calendar-box"><i class="icon icon--calendar"></i><label><a href="#"> Ngày khác</a></label></div>
+                      </div>
+                    </div>
+                    <div class="box-support">
+                      <label>Quý khách cần hỗ trợ?</label>
+                      <div class="group-contact">
+                        <a href="https://webcall.talking.vn/frame-click-to-call/new?code=tCEZl1-MKPuA6JU-czVAScCb0pPkHmPt" target="_blank" class="phone">
+                          <i class="icon icon--phone"></i>
+                          <p>Gọi miễn phí <br>qua internet</p>
+                        </a>
+                        <a href="mailto:info@vietravel.com" class="mail">
+                          <i class="icon icon--mail"></i>
+                          <p>Gửi yêu cầu <br>hỗ trợ ngay</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-12 right">
+                    <div class="group-services">
+                      <div class="item">
+                        <img src="/images/icons/utility/thoi gian.png" class="icon-img"><label>Thời gian</label>
+                        <p>4 ngày 3 đêm</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/phuong tien di chuyen.png" class="icon-img"><label>Phương tiện di chuyển</label>
+                        <p>Máy bay, Xe du lịch</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/diem tham quan.png" class="icon-img"><label>Điểm tham quan</label>
+                        <p>Hạ Long, Bái Đính, tràng an, yên tử, Hà nội</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/am thuc.png" class="icon-img"><label>Ẩm thực</label>
+                        <p>Buffet sáng, Theo thực đơn</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/khach san.png" class="icon-img"><label>Khách sạn</label>
+                        <p>Khách sạn 3 sao</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/thoi gian ly tuong.png" class="icon-img"><label>Thời gian lý tưởng</label>
+                        <p>Quanh năm</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/doi tuong thich hop.png" class="icon-img"><label>Đối tượng thích hợp</label>
+                        <p>Người lớn tuổi, Cặp đôi, Gia đình nhiều thế hệ, Thanh niên, Trẻ em</p>
+                      </div>
+                      <div class="item">
+                        <img src="/images/icons/utility/uu dai.png" class="icon-img"><label>Ưu đãi</label>
+                        <p>Đã bao gồm ưu đãi trong giá tour </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="section-05 mb-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-12">
+                  <h2>Những địa điểm tham quan</h2>
+                  <div class="slide-gallery">
+                    <div class="slick-slider slick-initialized" dir="ltr">
+                      <button type="button" data-role="none" class="slick-arrow slick-prev" style="display: block;"> Previous</button>
+                      <div class="slick-list">
+                        <div class="slick-track" style="width: 5292px; opacity: 1; transform: translate3d(-2520px, 0px, 0px);">
+                          <div data-index="-5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_QUOC TU GIAM.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_QUOC TU GIAM.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="-4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200914_Ha Long  (2).jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200914_Ha Long  (2).jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_150825_TuanChau.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_150825_TuanChau.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_TRANG AN (7).jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_TRANG AN (7).jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200914_NINH BINH _601725428.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200914_NINH BINH _601725428.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200915_shutterstock_625242944.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200915_shutterstock_625242944.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200915_HANOI_449720002.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200915_HANOI_449720002.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_QUOC TU GIAM.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_QUOC TU GIAM.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200914_Ha Long  (2).jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200914_Ha Long  (2).jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="5" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_150825_TuanChau.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_150825_TuanChau.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="6" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_TRANG AN (7).jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_TRANG AN (7).jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="7" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200914_NINH BINH _601725428.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200914_NINH BINH _601725428.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="8" tabindex="-1" class="slick-slide slick-active slick-cloned" aria-hidden="false" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="9" tabindex="-1" class="slick-slide slick-active slick-cloned" aria-hidden="false" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200915_shutterstock_625242944.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200915_shutterstock_625242944.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="10" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200915_HANOI_449720002.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200915_HANOI_449720002.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="11" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_QUOC TU GIAM.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_QUOC TU GIAM.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="12" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200914_Ha Long  (2).jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200914_Ha Long  (2).jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="13" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_150825_TuanChau.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_150825_TuanChau.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="14" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_211207_TRANG AN (7).jpg" width="252" title="https://media.travel.com.vn/Destination/dc_211207_TRANG AN (7).jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                          <div data-index="15" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 252px;">
+                            <div>
+                              <div class="image" tabindex="-1" style="width: 100%; display: inline-block;"><img src="https://media.travel.com.vn/Destination/dc_200914_NINH BINH _601725428.jpg" width="252" title="https://media.travel.com.vn/Destination/dc_200914_NINH BINH _601725428.jpg" height="180" alt="image"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;"> Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="map-route">
+            <section class="section-06 mb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-12">
+                    <h2 class="mb-4">Lịch trình</h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section-07-map mb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 d-none d-md-block col-12 left">
+                    <div class="go-tour">
+                      <div class="day day-001">
+                        <div class="wrapper"><span class="date-left"> Ngày </span><span class="date-center ">1</span><span class="date-right"><span class="date">04/04/2024</span><span class="location">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội 					(Ăn trưa, tối)</span></span></div>
+                      </div>
+                      <div class="day day-011">
+                        <div class="wrapper"><span class="date-left"> Ngày </span><span class="date-center ">2</span><span class="date-right"><span class="date">05/04/2024</span><span class="location">Hà Nội – Ninh Bình – Tràng An – Bái Đính (Ăn 3 bữa) </span></span></div>
+                      </div>
+                      <div class="day day-021">
+                        <div class="wrapper"><span class="date-left"> Ngày </span><span class="date-center ">3</span><span class="date-right"><span class="date">06/04/2024</span><span class="location">Hạ Long – Động Thiên Cung 	(Ăn 3 bữa)</span></span></div>
+                      </div>
+                      <div class="day day-031">
+                        <div class="wrapper"><span class="date-left"> Ngày </span><span class="date-center ">4</span><span class="date-right"><span class="date">07/04/2024</span><span class="location">Hạ Long – Sân Bay Nội Bài – Đà Nẵng 	 (Ăn sáng, trưa)</span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-12 right timeline-section">
+                    <div>
+                      <h3 id="day-00">Ngày 1 - Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội 					(Ăn trưa, tối)</h3>
+                      <div class="excerpt">
+                        <span class="line"></span>
+                        <div>
+                          <title></title>
+                          <p style="text-align:justify">Quý khách tập trung tại <strong>Sân bay Đà Nẵng</strong>, Ga đi Trong Nước. Hướng dẫn viên làm thủ tục cho Quý khách đáp chuyến bay đi Hà Nội. Quý khách ăn trưa tại nhà hàng địa phương và tham quan những di tích văn hóa nổi tiếng tại thủ đô:&nbsp;</p>
+                          <ul>
+                            <li style="text-align:justify">Một vòng <strong>Hồ Hoàn Kiếm ngắm</strong> bên ngoài Tháp Rùa, Đền Ngọc Sơn, Cầu Thê Húc.</li>
+                            <li style="text-align:justify"><strong>Văn Miếu:</strong> nơi thờ Khổng Tử và các bậc hiền triết của <strong>Nho Giáo, Quốc Tử Giám</strong> - trường đại học đầu tiên của Việt Nam, tìm về cội nguồn lịch sử của các vị Nho học.</li>
+                          </ul>
+                          <p style="text-align:justify">Quý khách dùng cơm chiều và nhận phòng khách sạn nghỉ ngơi. Buổi tối, Quý khách tự do khám phá 36 phố phường Hà Nội.&nbsp;</p>
+                          <p style="text-align:right"><strong>Nghỉ đêm tại Hà Nội</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 id="day-01">Ngày 2 - Hà Nội – Ninh Bình – Tràng An – Bái Đính (Ăn 3 bữa) </h3>
+                      <div class="excerpt">
+                        <span class="line"></span>
+                        <div>
+                          <title></title>
+                          <div style="text-align:justify">
+                            <p>Ăn sáng và trả phòng khách sạn. Xe khởi hành đưa Quý khách đến với&nbsp;<strong>Ninh Bình</strong> - <em>vùng đất mệnh danh là “Nơi mơ đến, chốn mong về” với nhiều di tích văn hóa, thiên nhiên vô cùng đặc sắc.</em> Đến nơi, Quý khách tham quan:&nbsp;</p>
+                            <ul>
+                              <li><strong>Chùa Bái Đính</strong> - một quần thể chùa với nhiều kỷ lục Việt Nam như pho tượng phật Di Lặc bằng đồng nặng 80 tấn, hành lang với 500 tượng vị La Hán, tòa Bảo Tháp cao 99m…</li>
+                              <li><strong>Khu Du lịch Tràng An</strong>&nbsp;- Quý khách lên thuyền truyền thống đi tham quan thắng cảnh hệ thống núi đá vôi hùng vĩ và các thung lũng ngập nước, thông với nhau bởi các dòng suối tạo nên các hang động ngập nước quanh năm. Điểm xuyến trong không gian hoang sơ, tĩnh lặng là hình ảnh rêu phong, cổ kính của các mái đình, đền, phủ nằm nép mình dưới chân các dãy núi cao.&nbsp;</li>
+                            </ul>
+                            <p>Quý khách dùng cơm tối và nhận phòng khách sạn nghỉ ngơi. Buổi tối quý khách tự do khám phá Phố cổ Hoa Lư, <em>một không gian check-in cổ, đẹp, trầm mặc đẹp trở nên lung linh, huyền ảo hơn với sắc màu của những chiếc đèn lồng và Bảo Tháp trên Hồ Kỳ Lân; trải nghiệm nhiều hoạt động trò chơi dân gian và nhiều loại hình văn hóa nghệ thuật từ dân tộc như múa rối nước, nhảy múa Tắc Xình, hát xẩm, ... đến những buổi trình diễn acoustic sẽ được diễn ra vào các buổi tối ngày cuối tuần.</em></p>
+                            <p style="text-align:right"><strong>Nghỉ đêm tại Ninh Bình</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 id="day-02">Ngày 3 - Hạ Long – Động Thiên Cung 	(Ăn 3 bữa)</h3>
+                      <div class="excerpt">
+                        <span class="line"></span>
+                        <div>
+                          <title></title>
+                          <p style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black">Quý khách ăn sáng và trả phòng khách sạn. Xe khởi hành đưa Quý khách đến thành phố biển Hạ Long tham quan:</span></span></span></p>
+                          <ul>
+                            <li style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black"><strong>Xuống thuyền đi du ngoạn Vịnh Hạ Long</strong> - Thắng cảnh thiên nhiên tuyệt đẹp và vô cùng sống động, được UNESCO công nhận là di sản thiên nhiên Thế giới năm 1994.</span></span></span></li>
+                            <li style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black">Từ trên tàu ngắm nhìn các hòn đảo lớn nhỏ trong Vịnh Hạ Long: <strong>Hòn Gà Chọi, Hòn Lư Hương.</strong></span></span></span></li>
+                            <li style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black"><strong>Động Thiên Cung</strong> là một trong những động đẹp nhất ở Hạ Long. Vẻ đẹp nguy nga và lộng lẫy bởi những lớp thạch nhũ và những luồng ánh sáng lung linh.</span></span></span></li>
+                          </ul>
+                          <p style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black">Xe đón Quý khách tại bến tàu và khởi hành đi tham quan chụp hình bên ngoài<strong> Bảo tàng Quảng Ninh, Cung Cá Heo </strong>- Cung Quy Hoạch, Hội Chợ, Triển Lãm Và Văn Hóa Quảng Ninh, tham quan <em>mua sắm đặc sản tại Hải Sản Hương Đà Hạ Long với nhiều mặt hàng hải sản tươi, khô, chả mực,..&nbsp;</em></span></span></span></p>
+                          <p style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black">Quý khách dùng cơm chiều và nhận phòng khách sạn nghỉ ngơi. Buổi tối, Quý khách tự do khám phá nhiều hoạt động dịch vụ giải trí sôi nổi tại “phố cổ” Bãi Cháy - nằm cạnh công viên Sun World Hạ Long từ những ẩm thực đường phố đến các quán cà phê siêu dễ thương như Hòn Gai Coffee &amp; Lounge hay thoải mái bung xõa tại The Mini Bar, Brothers Pub,…</span></span></span></p>
+                          <p style="text-align:right"><span style="font-size:12pt"><strong><span style="font-size:11.0pt"><span style="color:black">Nghỉ đêm tại Hạ Long.</span></span></strong></span></p>
+                          <p style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black">Hoặc lựa chọn một số dịch vụ khám phá Hạ Long về đêm (tự túc phương tiện và chi phí tham quan):</span></span></span></p>
+                          <p style="text-align:justify"><span style="font-size:12pt"><span style="font-size:11.0pt"><span style="color:black">-&nbsp; &nbsp; Trải nghiệm dịch vụ<strong> Cáp Treo Nữ Hoàng tại Sun World Hạ Long Complex </strong>trên Núi Ba Đèo, chiêm ngưỡng cảnh đẹp về đêm của thành phố Hạ Long dưới ánh đèn lung linh (thời gian hoạt động cáp treo dự kiến từ 10h đến 18h các ngày thứ 7 và CN).</span></span></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 id="day-03">Ngày 4 - Hạ Long – Sân Bay Nội Bài – Đà Nẵng 	 (Ăn sáng, trưa)</h3>
+                      <div class="excerpt">
+                        <span class="line"></span>
+                        <div>
+                          <title></title>
+                          <div style="text-align:justify">
+                            <div style="text-align:justify">
+                              <p><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Quý khách ăn sáng và trả phòng khách sạn. Xe đưa Quý khách đi tham quan:</span></span></span></p>
+                              <ul>
+                                <li style="list-style-type:disc"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000"><strong>Vùng đất thiêng Yên Tử</strong></span></span></span><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">: Quý khách lên cáp treo du ngoạn thắng cảnh thiên nhiên Đông Yên Tử (chi phí cáp treo tự túc), nơi còn lưu giữ nhiều di tích lịch sử mệnh danh “Đất tổ Phật giáo Việt Nam”, chiêm bái chùa Một Mái, chùa Hoa Yên – nơi tu hành của phật hoàng Trần Nhân Tông khai sinh ra dòng mới Thiền Phái Trúc Lâm, nằm trên lưng chừng núi ở độ cao 516m. Theo dấu chân Phật Hoàng viếng Chùa Đồng có tên Thiên Trúc Tự (chùa Cõi Phật), tọa lạc ở đỉnh cao nhất dãy Yên Tử (1.068m) – ngôi chùa bằng đồng lớn nhất Việt Nam.</span></span></span></li>
+                                <li style="list-style-type:disc"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000"><em>Dừng tại trạm dừng chân Hải Dương mua đặc sản: bánh đậu xanh, bánh khảo</em></span></span></span></li>
+                              </ul>
+                              <p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Xe khởi hành đưa Quý khách ra sân bay Nội Bài làm thủ tục đón chuyến bay về Tp.Đà Nẵng. Chia tay Quý khách và kết thúc chương trình du lịch tại sân bay Đà Nẵng.&nbsp;</span></span></span></p>
+                              <p style="text-align:center"><strong><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">KẾT THÚC CHƯƠNG TRÌNH, TẠM BIỆT QUÝ KHÁCH!</span></span></span></strong></p>
+                              <p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000"><strong>*Lưu ý :</strong></span></span></span></p>
+                              <ul>
+                                <li style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Hành trình có thể thay đổi thứ tự điểm đến tùy vào điều kiện thực tế.&nbsp;</span></span></span></li>
+                                <li style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Lịch trình tham quan (tắm biển, ngắm hoa, trải nghiệm,...) rất dễ bị ảnh hưởng bởi thời tiết. Đây là trường hợp bất khả kháng mong Quý khách hiểu và thông cảm.</span></span></span></li>
+                                <li style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Khách Sạn có thể ở xa trung tâm thành phố vào các mùa Cao Điểm.</span></span></span></li>
+                                <li style="text-align:justify"><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Vì những yếu tố khách quan trong giai đoạn này, điểm tham quan có thể đóng cửa và được thay bằng điểm khác phù hợp với chương trình.</span></span></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section-08 mb-5">
+              <div class="container-xl">
+                <div class="row">
+                  <div class="col-md-6 col-12 left">
+                    <h2 class="mb-4">Chi tiết tour</h2>
+                    <div class="tour">
+                      <div class="detail-tour">
+                        <h3 class="tt">Thông tin chuyến bay</h3>
+                        <div class="detail-tour-inner">
+                          <div class="date"><span>Ngày đi - </span><b>04/04/2024</b></div>
+                          <div class="time">
+                            <h4>09:40</h4>
+                            <span>Bay thẳng</span>
+                            <h4>11:00</h4>
+                          </div>
+                          <div class="from d-flex justify-content-between align-items-center col-12">
+                            <span class="col-md-4 small text-center"></span>
+                            <div class="row col-md-4"><img src="https://media.travel.com.vn/ImageAirlines/logo_VIETRAVELAIRLINES.png" class="flight-logo" alt="prop"></div>
+                            <span class="col-md-4 small text-center"></span>
+                          </div>
+                          <div class="from d-flex justify-content-between align-items-center col-12">
+                            <div class="col-md-4 small text-center"></div>
+                            <div class="row col-md-4"></div>
+                            <div class="col-md-4 small text-center"></div>
+                          </div>
+                          <div class="p-line"><span><img src="/images/icons/go.png" alt="prop"></span><span><img src="/images/icons/airport.png" alt="prop"></span><span><img src="/images/icons/to.png" alt="prop"></span></div>
+                          <div class="cb">
+                            Ký hiệu chuyến bay
+                            <p> VU638</p>
+                          </div>
+                        </div>
+                        <div class="detail-tour-inner comeback ">
+                          <div class="date"><span>Ngày về - </span><b>07/04/2024</b></div>
+                          <div class="time">
+                            <h4>17:55</h4>
+                            <span>Bay thẳng</span>
+                            <h4>19:15</h4>
+                          </div>
+                          <div class="from d-flex justify-content-between align-items-center col-12">
+                            <span class="col-md-4 small text-center"></span>
+                            <div class="row col-md-4"><img src="https://media.travel.com.vn/ImageAirlines/logo_VIETRAVELAIRLINES.png" class="flight-logo" alt="prop"></div>
+                            <span class="col-md-4 small text-center"></span>
+                          </div>
+                          <div class="from d-flex justify-content-between align-items-center col-12">
+                            <div class="col-md-4 small text-center"></div>
+                            <div class="row col-md-4"></div>
+                            <div class="col-md-4 small text-center"></div>
+                          </div>
+                          <div class="p-line"><span><img src="/images/icons/go.png" alt="prop"></span><span><img src="/images/icons/airport.png" alt="prop"></span><span><img src="/images/icons/to.png" alt="prop"></span></div>
+                          <div class="cb">
+                            Ký hiệu chuyến bay
+                            <p> VU639</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more-info more-info-1 mt-5">
+                        <h3 class="tt">Thông tin tập trung</h3>
+                        <div class="block">
+                          <span>Ngày giờ tập trung</span>
+                          <div class="info">
+                            00:00
+                            <p>04/04/2024</p>
+                          </div>
+                        </div>
+                        <div class="block">
+                          <span>Nơi tập trung</span>
+                          <div class="info">Sân bay</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12 right">
+                    <h2>Giá tour &amp; phụ thu phòng đơn</h2>
+                    <div class="table-price">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th class="l1">Loại khách</th>
+                            <th class="l2">Giá tour</th>
+                          </tr>
+                          <tr>
+                            <td>Người lớn (Từ 12 tuổi trở lên)</td>
+                            <td class="t-price">7.490.000&nbsp;₫</td>
+                          </tr>
+                          <tr>
+                            <td>Trẻ em (Từ 5 - 11 tuổi)</td>
+                            <td class="t-price">6.366.000&nbsp;₫</td>
+                          </tr>
+                          <tr>
+                            <td>Trẻ nhỏ (Từ 2 - 4 tuổi)</td>
+                            <td class="t-price">2.990.000&nbsp;₫</td>
+                          </tr>
+                          <tr>
+                            <td>Em bé (Dưới 2 tuổi)</td>
+                            <td class="t-price">400.000&nbsp;₫</td>
+                          </tr>
+                          <tr class="total">
+                            <td>Phụ thu phòng đơn</td>
+                            <td class="t-price">1.200.000&nbsp;₫</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h2 class="tt mt-3">Thông tin hướng dẫn viên</h2>
+                    <div class="table-price">
+                      <div class="more-info more-info-2">
+                        <div class="block">
+                          <span>HDV dẫn đoàn</span>
+                          <div>Đang cập nhật</div>
+                        </div>
+                        <div class="block">
+                          <span>HDV tiễn</span>
+                          <div class="info">
+                            <h3>TRẦN THỊ KIM PHÚ - CN ĐÀ NẴNG</h3>
+                            <p>190 Pasteur, Phường Võ Thị Sáu, Quận 3, TP.HCM, Viet Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="note-info">
+            <section class="section-09">
+              <div class="container">
+                <div class="row">
+                  <h2>Những thông tin cần lưu ý</h2>
+                  <div class="col-md-6 col-12 left">
+                    <div class="faqs">
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Giá tour bao gồm</h3>
+                        <div class="panel"> 	Giá tour bao gồm: 
+                          <br>- Xe tham quan (15, 25, 35, 45 chỗ tùy theo số lượng khách) theo chương trình
+                          <br>- Vé máy bay khứ hồi DAD- HAN - DAD
+                          <br>- Khách sạn 3 sao theo tiêu chuẩn 2 khách/phòng hoặc 3 khách/phòng 
+                          <br>- Vé tham quan theo chương trình  
+                          <br>- Hướng dẫn viên tiếng Việt nối tuyến
+                          <br>- Bảo hiểm du lịch với mức bồi thường cao nhất 120.000.000đ/vụ
+                          <br>- Nón Vietravel + Nước suối + Khăn lạnh 
+                          <br>- Thuế VAT 
+                          <br>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Giá tour không bao gồm</h3>
+                        <div class="panel">
+                          <p>- Chi phí cá nhân: ăn uống ngoài chương trình, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, phụ thu phòng đơn,…
+                            <br>- Chi phí tham quan ngoài chương trình : Cáp Treo Yên Tử, Cáp Treo Fansipan, KDL Đảo Tuần Châu, Sun World Ha Long Park,
+                            <br>
+                          </p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Giá vé trẻ em</h3>
+                        <div class="panel">
+                          <p>+ Trẻ em dưới 5 tuổi:  không thu phí dịch vụ, bố mẹ tự lo cho bé và thanh toán các chi phí phát sinh (đối với các dịch vụ tính phí theo chiều cao…). Hai người lớn chỉ được kèm 1 trẻ em dưới 5 tuổi, trẻ em thứ 2 sẽ đóng phí theo qui định dành cho độ tuổi từ 5 đến dưới 12 tuổi và phụ thu phòng đơn. Vé máy bay, tàu hỏa, phương tiện vận chuyển công cộng mua vé theo qui định của các đơn vị vận chuyển.
+                            <br>+ Trẻ em từ 5 tuổi đến dưới 12 tuổi: 85% giá tour người lớn (không có chế độ giường riêng). Hai người lớn chỉ được kèm 1 trẻ em từ 5 - dưới 12 tuổi, em thứ hai trở lên phải mua 1 suất giường đơn.
+                            <br>+ Trẻ em từ 12 tuổi trở lên: mua một vé như người lớn
+                            <br>+ Vé máy bay phải mua theo quy định của từng hãng hàng không
+                          </p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Điều kiện thanh toán</h3>
+                        <div class="panel">
+                          <p>- Khi đăng ký đặt cọc 50% số tiền tour
+                            <br>- Số tiền còn lại thanh toán hết trước ngày khởi hành 7-10 ngày (áp dụng tour ngày thường), trước ngày khởi hành 20-25 ngày (áp dụng tour lễ tết) 
+                            <br>
+                          </p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Các điều kiện khi đăng ký tour</h3>
+                        <div class="panel">
+                          <p> Đối với Khách Quốc tịch Việt Nam: Khi đi tour Trẻ em từ 14 tuổi trở lên và người lớn cần đem theo CMND/Passport (Hộ chiếu) bản chính còn hạn sử dụng, hình ảnh rõ (CMND có thời hạn sử dụng không quá 15 năm, tính từ ngày cấp)/ Giấy khai sinh bản chính (trẻ em dưới 14 tuổi), trẻ em trên 14 tuổi bắt buộc phải có CMND hoặc Passport làm thủ tục lên máy bay.  
+                            <br>- Đối với khách Nước ngoài/Việt Kiều: Khi đi tour phải mang theo đầy đủ Passport (Hộ Chiếu) bản chính còn hạn sử dụng hoặc thẻ xanh kèm theo Visa và giấy tái xuất nhập Việt Nam làm thủ tục lên máy bay.  
+                            <br>- Khi đăng ký tour Quý khách vui lòng mang theo CMND/Passport bản chính hoặc cung cấp tên chính xác đầy đủ, đúng từng ký tự trên CMND/ Passport (Hộ chiếu)/Giấy khai sinh (trẻ em dưới 14 tuổi) theo thứ tự: Họ/tên lót/tên. Quý khách khi đăng ký cung cấp tên theo giấy tờ tùy thân nào, khi đi tour phải mang theo giấy tờ tùy thân đó theo qui định hãng hàng không 
+                            <br>- Trong trường hợp Quý khách cung cấp tên sai, đến trễ giờ bay, vui lòng chịu phí đổi vé hoặc mua lại vé mới theo quy định của Hãng Hàng Không (nếu chuyến bay còn chỗ). 
+                            <br>- Trong trường hợp Quý khách bay hãng hàng không Vietjet và Jetstar, vé không hoàn, không dời, đổi, huỷ, sai tên mất 100% theo qui định hãng hàng không. Giá vé máy bay trẻ em bằng 100% người lớn. 
+                            <br>- Trong trường hợp Quý khách bay hãng hàng không Việt Nam. Vé máy bay khuyến mãi không hoàn, không đổi, hủy, sai tên mất 100% theo qui định hãng hàng không. vé Vietnam Airlines  không bay chặng đi, tự động hủy chặng về. Giá vé máy bay trẻ em bằng 90% vé người lớn. 
+                            <br>- Giá vé, giờ bay có thể thay đổi theo Hãng Hàng Không (Vietnam Airlines, Vietjet, Jetstar) không thể báo trước. 
+                            <br>- Do các chuyến bay phụ thuộc vào các hãng Hàng Không nên trong một số trường hợp giờ bay có thể thay đổi mà không được báo trước. Tùy vào tình hình thực tế, Chương trình và điểm tham quan có thể linh động thay đổi thứ tự các điểm phù hợp điều kiện giờ bay và thời tiết thực tế. Vietravel sẽ không chịu trách nhiệm bảo đảm các điểm tham quan trong trường hợp:
+                            <br>+ Xảy ra thiên tai: bão lụt, hạn hán, động đất…
+                            <br>+ Sự cố về an ninh: khủng bố, biểu tình
+                            <br>+ Sự cố về hàng không: trục trặc kỹ thuật, an ninh, dời, hủy, hoãn chuyến bay.
+                            <br>- Nếu những trường hợp trên xảy ra, Vietravel sẽ xem xét để hoàn trả chi phí không tham quan cho khách trong điều kiện có thể (sau khi đã trừ lại các dịch vụ đã thực hiện….và không chịu trách nhiệm bồi thường thêm bất kỳ chi phí nào khác).
+                            <br>- Sau khi Quý khách đã làm thủ tục Hàng Không và nhận thẻ lên máy bay, đề nghị Quý khách giữ cẩn thận và lưu ý lên máy bay đúng giờ. Vietravel không chịu trách nhiệm trong trường hợp khách làm mất thẻ lên máy bay và không lên máy bay đúng theo giờ quy định của Hàng Không.
+                            <br>- Giờ nhận phòng khách sạn: sau 14:00 giờ và trả phòng trước 12:00 giờ   
+                            <br>- Phòng khách sạn/resort có thể xảy ra trường hợp phòng không gần nhau, không cùng tầng, loại phòng một giường đôi hoặc hai giường đơn không theo yêu cầu, tùy tình hình thực tế từng khách sạn/Resort. 
+                            <br>- Trường hợp quý khách tham gia tour 01 khách, bắt buộc đóng thêm tiền phụ thu phòng đơn để ở riêng 01 phòng. Trường hợp trong đoàn cũng có khách đi 01 mình, cùng giới tính và có nhu cầu muốn ghép cùng phòng với quý khách thì Vietravel sẽ hoàn lại tiền phụ thu phòng đơn cho quý khách.
+                            <br>- Trường hợp quý khách đi nhóm 03 khách, Vietravel sẽ cung cấp 01 phòng dành cho 03 khách là 01 giường lớn 1m6 và 01 giường phụ di động từ 0.8 - 1,2m (extrabed) hoặc 01 nệm đơn tùy từng khách sạn/Resort. Trong trường  quý khách có nhu cầu ở riêng, vui lòng đóng thêm tiền phụ thu phòng đơn theo qui định 
+                            <br>- Thông tin hành lý khi đi tour : Xách tay dưới 7kg/1khách - Kích thước không quá: 56cm x 36cm x 23 cm, chất lỏng với thể tích không quá 100ml. Ký gửi: 20kg/1khách - Kích thước không quá: 119cm x 119cm x 81cm. Các vật phẩm không được chấp nhận dưới dạng hành lý ký gởi hoặc vận chuyển trong hành lý theo qui định hàng không
+                            <br>- Thông tin tập trung : Tại sân bay Tân Sơn Nhất, Ga đi trong nước, trước giờ bay 2 tiếng (áp dụng ngày thường), trước 2 tiếng 30 phút (áp dụng lễ tết), tại cột số 4 Trong trường hợp bay hãng hàng không Vietjet, tại cột 10 trong trường hợp bay hãng hàng không Vietnam, Jetstar. 
+                            <br>- Quý khách dưới 18 tuổi khi đi tour phải có Bố Mẹ hoặc người thân trên 18 tuổi đi cùng. Trường hợp đi một mình phải được Bố Mẹ ủy quyền (có xác nhận của chính quyền địa phương) cho Vietravel 
+                            <br>- Khách nữ từ 55 tuổi trở lên và khách nam từ 60 trở lên: nên có người thân dưới 55 tuổi (đầy đủ sức khỏe) đi cùng. Riêng khách từ 70 tuổi trở lên: Bắt buộc phải có người thân dưới 55 tuổi (đầy đủ sức khỏe) đi cùng và nộp kèm giấy khám sức khỏe, có xác nhận đủ sức khỏe để đi du lịch của bác sĩ + Giấy cam kết sức khỏe theo mẫu qui định của công ty. Vì lý do an toàn Quý khách hạn chế và không nhận khách từ 80 tuổi trở lên. Khách trên 80 tuổi không có chế độ bảo hiểm.
+                            <br>- Quý khách đang mang thai vui lòng báo cho nhân viên bán tour ngay tại thời điểm đăng ký. Lưu ý phải có ý kiến của bác sĩ trước khi đi tour. Cam kết tự chịu trách nhiệm về sức khỏe của mình và thai nhi trong suốt thời gian tham gia chương trình du lịch. 
+                            <br>- Quý khách có nhu cầu cần xuất hóa đơn vui lòng cung cấp thông tin xuất hóa đơn cho nhân viên bán tour  khi ngay khi đăng ký, không nhận xuất hóa đơn sau khi tour đã kết thúc. 
+                            <br>- Đây là chương trình du lịch trọn gói, Vietravel không có trách nhiệm hoàn trả chi phí chênh lệch cho các khách hàng thuộc diện miễn giảm hoặc đối tượng ưu tiên như trẻ nhỏ, người lớn tuổi, người có công với cách mạng… Chính sách miễn giảm, ưu tiên (nếu có) chỉ dành cho khách lẻ của các điểm tham quan. 
+                            <br>- Vé tặng sẽ không được hoàn lại tiền trong trường hợp khách không tham gia, show hủy do các trường hợp khách quan có thông báo của đơn vị tổ chức.
+                            <br>- Quý khách vui lòng tham khảo kỹ các Điều Kiện Bán Vé trước khi đăng ký chuyến du lịch. Trong trường hợp không trực tiếp đăng ký, nhờ người thân đăng ký hộ vui lòng cập nhật thông tin từ người đăng ký.
+                            <br>
+                          </p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12 right">
+                    <div class="faqs">
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Lưu ý khi chuyển/hủy tour</h3>
+                        <div class="panel">
+                          <p>Lưu ý khi chuyển/huỷ tour: Sau khi đóng tiền, nếu Quý khách muốn chuyển/huỷ tour xin vui lòng mang Vé Du Lịch đến văn phòng đăng ký tour để làm thủ tục chuyển/huỷ tour và chịu mất phí theo quy định của Vietravel. Không giải quyết các trường hợp liên hệ chuyển/huỷ tour qua điện thoại.</p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Các điều kiện hủy tour đối với ngày thường</h3>
+                        <div class="panel">
+                          <p>-   Được chuyển sang các tuyến du lịch khác trước ngày khởi  hành 20 ngày : Không mất chi phí.
+                            <br>-   Nếu hủy hoặc chuyển sang các chuyến du lịch khác ngay sau khi đăng ký đến 19 ngày trước ngày khởi hành: Chi phí hủy tour: 50% tiền cọc tour.
+                            <br>-   Nếu hủy hoặc chuyển sang các chuyến du lịch khác từ 12-14 ngày trước ngày khởi hành: Chi phí hủy tour: 100% tiền cọc tour.
+                            <br>-   Nếu hủy chuyến du lịch trong vòng từ 08-11 ngày trước ngày khởi hành: Chi phí hủy tour: 50% trên giá tour du lịch.
+                            <br>-   Nếu hủy chuyến du lịch trong vòng từ 05-07 ngày trước ngày khởi hành: Chi phí hủy tour: 70% trên giá tour du lịch.
+                            <br>-   Nếu hủy chuyến du lịch trong vòng từ 02-04 ngày trước ngày khởi hành: Chi phí hủy tour: 90% trên giá vé du lịch.
+                            <br>-   Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành : Chi phí hủy tour: 100% trên giá vé du lịch.
+                            <br>Thời gian hủy chuyến du lịch được tính cho ngày làm việc, không tính thứ 7, Chủ Nhật và các ngày Lễ, Tết.
+                            <br>
+                          </p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Các điều kiện hủy tour đối với ngày lễ, Tết</h3>
+                        <div class="panel">
+                          <p>Áp dụng cho các tour có thời gian diễn ra rơi vào một trong các ngày Lễ, Tết theo qui định</p>
+                          <p>-    Được chuyển sang các tuyến du lịch khác trước ngày khởi  hành 20 ngày: Không mất chi phí.
+                            <br>-    Nếu hủy hoặc chuyển sang các chuyến du lịch khác ngay sau khi đăng ký từ 15-19 ngày trước ngày khởi hành: Chi phí hủy tour: 50% tiền cọc tour.
+                            <br>-    Nếu hủy hoặc chuyển sang các chuyến du lịch khác từ 12-14 ngày trước ngày khởi hành: Chi phí hủy tour: 100% tiền cọc tour.
+                            <br>-    Nếu hủy chuyến du lịch trong vòng từ 08-11 ngày trước ngày khởi hành: Chi phí hủy tour: 50% trên giá tour du lịch.
+                            <br>-    Nếu hủy chuyến du lịch trong vòng từ 05-07 ngày trước ngày khởi hành: Chi phí hủy tour: 70% trên giá tour du lịch.
+                            <br>-    Nếu hủy chuyến du lịch trong vòng từ 02-04 ngày trước ngày khởi hành: Chi phí hủy tour: 90% trên giá vé du lịch.
+                            <br>-    Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành : Chi phí hủy tour: 100% trên giá vé du lịch.
+                            <br>
+                          </p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Trường hợp bất khả kháng</h3>
+                        <div class="panel">
+                          <p>Nếu chương trình du lịch bị hủy bỏ hoặc thay đổi bởi một trong hai bên vì lý do bất khả kháng (hỏa hoạn, thời tiết, tai nạn, thiên tai, chiến tranh, dịch bệnh, hoãn, dời, và hủy chuyến hoặc thay đổi khác của các phương tiện vận chuyển công cộng hoặc các sự việc bất khả kháng khác theo quy định pháp luật…), thì hai bên sẽ không chịu bất kỳ nghĩa vụ bồi hoàn các tổn thất đã xảy ra và không chịu bất kỳ trách nhiệm pháp lý nào. Tuy nhiên mỗi bên có trách nhiệm cố gắng tối đa để giúp đỡ bên bị thiệt hại nhằm giảm thiểu các tổn thất gây ra vì lý do bất khả kháng.</p>
+                        </div>
+                      </article>
+                      <article>
+                        <i class="open far fa-chevron-down"></i>
+                        <h3>Liên hệ</h3>
+                        <div class="panel">
+                          <p>
+                            <title></title>
+                          <p style="text-align:center"><strong>CHẤT LƯỢNG LUÔN LÀ MỐI QUAN TÂM HÀNG ĐẦU !</strong></p>
+                          <p style="text-align:center"><em>Mọi chi tiết vui lòng liên hệ:</em></p>
+                          <p style="text-align:center"><em>58 PASTEUR, PHƯỜNG HẢI CHÂU 1, QUẬN HẢI CHÂU, TP ĐÀ NẴNG</em></p>
+                          <p style="text-align:center"><em>Điện thoại: (84-236) 3863 544 ( ext: 115-124)</em></p>
+                          <p style="text-align:center"><strong><em>Hotline: 0905 173 331 (Mr Hải) – 0905070544 (Mr.Thành)</em></strong></p>
+                          </p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="section-08">
+            <div class="container">
+              <div class="row">
+                <h2>Có thể Quý khách sẽ thích</h2>
+                <div class="products">
+                  <div class="product">
+                    <div class="product-inner">
+                      <div class="product-image">
+                        <a href="/tourNDDNG1681-001-040424VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx"><img src="https://media.travel.com.vn/Destination/tf_221107103744_630544.jpg" alt="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa" title="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa"></a><a href="#" class="wishlist-button"><i class="icon icon--heart"></i></a>
+                        <div class="s-rate"><span>9</span></div>
+                      </div>
+                      <div class="product-content">
+                        <span class="meta">04/04/2024 - Giờ đi: 09:04</span>
+                        <h3 class="product-title card-text tour-item__title mb-1"><a href="/tourNDDNG1681-001-040424VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx">Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa</a></h3>
+                        <p class="des">Nơi khởi hành Đà Nẵng</p>
+                        <div class="tour-item__price--current group-price">
+                          <div class="sale-price"><span class="price">7.490.000&nbsp;₫</span></div>
+                        </div>
+                        <div class="tour-item__price--current">
+                          <div class="btn-book"><a href="#" title="Đặt ngay" class="btn btn-primary btn-sm"><i class="icon icon--shopping p-1"></i>Đặt ngay</a></div>
+                          <div class="btn-bloc"><a href="/tourNDDNG1681-001-040424VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx" class="btn product-item__summary__btn-login" title="Xem chi tiết">Xem chi tiết</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-inner">
+                      <div class="product-image">
+                        <a href="/tourNDDNG1681-002-180424VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx"><img src="https://media.travel.com.vn/Destination/tf_221107103744_630544.jpg" alt="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa" title="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa"></a><a href="#" class="wishlist-button"><i class="icon icon--heart"></i></a>
+                        <div class="s-rate"><span>9</span></div>
+                      </div>
+                      <div class="product-content">
+                        <span class="meta">18/04/2024 - Giờ đi: 09:04</span>
+                        <h3 class="product-title card-text tour-item__title mb-1"><a href="/tourNDDNG1681-002-180424VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx">Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa</a></h3>
+                        <p class="des">Nơi khởi hành Đà Nẵng</p>
+                        <div class="tour-item__price--current group-price">
+                          <div class="sale-price"><span class="price">7.490.000&nbsp;₫</span></div>
+                        </div>
+                        <div class="tour-item__price--current">
+                          <div class="btn-book"><a href="#" title="Đặt ngay" class="btn btn-primary btn-sm"><i class="icon icon--shopping p-1"></i>Đặt ngay</a></div>
+                          <div class="btn-bloc"><a href="/tourNDDNG1681-002-180424VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx" class="btn product-item__summary__btn-login" title="Xem chi tiết">Xem chi tiết</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-inner">
+                      <div class="product-image">
+                        <a href="/tourNDDNG1681-004-040424VU/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx"><img src="https://media.travel.com.vn/Destination/tf_221107103744_630544.jpg" alt="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa" title="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa"></a><a href="#" class="wishlist-button"><i class="icon icon--heart"></i></a>
+                        <div class="s-rate"><span>9</span></div>
+                      </div>
+                      <div class="product-content">
+                        <span class="meta">04/04/2024 - Giờ đi: 06:04</span>
+                        <h3 class="product-title card-text tour-item__title mb-1"><a href="/tourNDDNG1681-004-040424VU/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx">Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa</a></h3>
+                        <p class="des">Nơi khởi hành Đà Nẵng</p>
+                        <div class="tour-item__price--current group-price">
+                          <div class="sale-price"><span class="price">7.490.000&nbsp;₫</span></div>
+                        </div>
+                        <div class="tour-item__price--current">
+                          <div class="btn-book"><a href="#" title="Đặt ngay" class="btn btn-primary btn-sm"><i class="icon icon--shopping p-1"></i>Đặt ngay</a></div>
+                          <div class="btn-bloc"><a href="/tourNDDNG1681-004-040424VU/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx" class="btn product-item__summary__btn-login" title="Xem chi tiết">Xem chi tiết</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-inner">
+                      <div class="product-image">
+                        <a href="/tourNDDNG1681-004-160524VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx"><img src="https://media.travel.com.vn/Destination/tf_221107103744_630544.jpg" alt="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa" title="Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa"></a><a href="#" class="wishlist-button"><i class="icon icon--heart"></i></a>
+                        <div class="s-rate"><span>9</span></div>
+                      </div>
+                      <div class="product-content">
+                        <span class="meta">16/05/2024 - Giờ đi: 09:05</span>
+                        <h3 class="product-title card-text tour-item__title mb-1"><a href="/tourNDDNG1681-004-160524VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx">Đông Bắc: Hà Nội - Hà Giang - Lũng Cú - Đồng Văn - Mã Pì Lèng - Mùa đá nở hoa</a></h3>
+                        <p class="des">Nơi khởi hành Đà Nẵng</p>
+                        <div class="tour-item__price--current group-price">
+                          <div class="sale-price"><span class="price">7.490.000&nbsp;₫</span></div>
+                        </div>
+                        <div class="tour-item__price--current">
+                          <div class="btn-book"><a href="#" title="Đặt ngay" class="btn btn-primary btn-sm"><i class="icon icon--shopping p-1"></i>Đặt ngay</a></div>
+                          <div class="btn-bloc"><a href="/tourNDDNG1681-004-160524VU-V/dong-bac-ha-noi-ha-giang-lung-cu-dong-van-ma-pi-leng-mua-da-no-hoa.aspx" class="btn product-item__summary__btn-login" title="Xem chi tiết">Xem chi tiết</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 text-right">
+                  <div class="pager_simple_orange">
+                    <ul class=" pagination" role="navigation" aria-label="Pagination">
+                      <li class="page-item disabled"><a class="page-link " tabindex="-1" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">«</a></li>
+                      <li class="active"><a rel="canonical" role="button" class="page-link" tabindex="-1" aria-label="Page 1 is your current page" aria-current="page">1</a></li>
+                      <li class="page-item disabled"><a class="page-link " tabindex="-1" role="button" aria-disabled="true" aria-label="Next page" rel="next">»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="bottom-fixed  animate__fadeInUp animate__animated animate__delay-2s">
+            <div class="top-bar d-none d-md-block"><i class="icon icon--chevron-up " style="transform: rotate(0deg);"></i></div>
+            <div class="wrapper ">
+              <div class="container">
+                <div class="row short-summary">
+                  <div class="col-md-8 col-12 left d-none d-md-flex"><span class="title" title="🔥 Hà Nội - Bái Đính - Khu Du Lịch Tràng An - Bái Đính - Hạ Long - Yên Tử (Khách sạn 4 sao)">🔥 Hà Nội - Bái Đính - Khu Du Lịch Tràng An - Bái Đính - Hạ Long - Yên Tử (Khách sạn 4 sao)</span><span class="info">4 THÁNG 4 NĂM 2024 | 4 ngày 3 đêm | Máy bay</span></div>
+                  <div class="col-md-4 col-12 right">
+                    <div class="price">
+                      <div class="price-right">
+                        <div class="price-total">Giá: 7.490.000&nbsp;₫</div>
+                      </div>
+                    </div>
+                    <div class="price-detail d-lg-none"><span><i class="icon icon--chevron-up" style="transform: rotate(0deg);"></i></span></div>
+                    <div class="btn-book"><a title="Đặt ngay" class="btn btn-primary">Đặt ngay</a></div>
+                  </div>
+                </div>
+                <div class="row full-summary" id="full-summary" style="display: flex; margin-bottom: -163px;">
+                  <div class="col-md-8 col-12 left">
+                    <div class="row item-l1">
+                      <div class="col-2 item-icon text-center"><i class="icon icon--flight"></i></div>
+                      <div class="col-md-10 col-12 item-flight">
+                        <div class="detail-tour">
+                          <div class="detail-tour-inner goto">
+                            <div class="date"><span>Ngày đi -</span><b> 04/04/2024</b></div>
+                            <div class="from">
+                              <h4><span></span></h4>
+                              <h4><span></span></h4>
+                            </div>
+                            <div class="p-line"><span><img src="/images/icons/go.png" alt="prop"></span><span><img src="/images/icons/airport.png" alt="prop"></span><span><img src="/images/icons/to.png" alt="prop"></span></div>
+                            <div class="time">
+                              <h4>09:40</h4>
+                              <span>Bay thẳng</span>
+                              <h4>11:32</h4>
+                            </div>
+                          </div>
+                          <div class="detail-tour-inner comeback">
+                            <div class="date"><span>Ngày về -</span><b> 07/04/2024</b></div>
+                            <div class="from">
+                              <h4><span></span></h4>
+                              <h4><span></span></h4>
+                            </div>
+                            <div class="p-line"><span><img src="/images/icons/go.png" alt="prop"></span><span><img src="/images/icons/airport.png" alt="prop"></span><span><img src="/images/icons/to.png" alt="prop"></span></div>
+                            <div class="time">
+                              <h4>17:55</h4>
+                              <span>Bay thẳng</span>
+                              <h4>11:32</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 right">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Người lớn</td>
+                          <td><label>7.490.000&nbsp;₫</label></td>
+                        </tr>
+                        <tr>
+                          <td>Trẻ em</td>
+                          <td><label>6.366.000&nbsp;₫</label></td>
+                        </tr>
+                        <tr>
+                          <td>Trẻ nhỏ</td>
+                          <td><label>2.990.000&nbsp;₫</label></td>
+                        </tr>
+                        <tr>
+                          <td>Em bé</td>
+                          <td><label>400.000&nbsp;₫</label></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <section class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-6 block ">
+                        <h4>Liên hệ</h4>
+                        <div class="contact-info">
+                            16 Tô Tịch, Hàng Gai, Hoàn Kiếm, Hà Nội<br />
+                            0988220229<br />
+                            0962203566<br />
+                            info@dulichhoangnam.com
+                        </div>
+                        <h4>Mạng xã hội</h4>
+                        <ul class="socials">
+                            <li class="social">
+                                <a href="#" target="_blank" rel="nofollow noreferrer" name="facebook" title="facebook">
+                                    <!-- <i class="fab fa-facebook-f"></i> -->
+                                    <embed src="./assets/svg/facebook.svg" type="">
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#" target="_blank" rel="nofollow noreferrer" name="instagram" title="instagram">
+                                    <!-- <i class="fab fa-instagram"></i> -->
+                                    <embed src="./assets/svg/instagram.svg" type="">
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#" target="_blank" rel="nofollow noreferrer" name="viber" title="viber">
+                                    <!-- <i class="fab fa-viber"></i> -->
+                                    <embed src="./assets/svg/viper.svg" type="">
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#" target="_blank" rel="nofollow noreferrer" name="zalo" title="zalo">
+                                    <!-- <i class="icon icon--zalo"></i> -->
+                                    <embed src="./assets/svg/zalo.svg" type="">
+                                        
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#" target="_blank" rel="nofollow noreferrer" name="youtube" title="youtube">
+                                    <!-- <i class="fab fa-youtube"></i> -->
+                                    <embed src="./assets/svg/youtube.svg" type="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="call-action">
+                            <a><i class="fa-regular fa-phone"></i>1900 1530</a>
+                        </div>
+                        <p>Từ 8:00 - 22:00 hàng ngày</p>
+                    </div>
+                    <div class="col-md-4 col-6 block ">
+                        <h4>Thông tin</h4>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#" target="_blank" rel="nofollow noreferrer">Tạp chí sử dụng</a></li>
+                            <li class="menu-item"><a class="" href="#">Cẩm nang du lịch</a></li>
+                            <li class="menu-item"><a class="" href="#">Tin tức</a></li>
+                            <li class="menu-item"><a class="" href="#">Sitemap</a></li>
+                            <li class="menu-item"><a class="" href="#">FAQs</a></li>
+                            <li class="menu-item"><a class="" href="#">Chính sách riêng tư</a></li>
+                            <li class="menu-item"><a href="#">Thỏa thuận sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-6 block">
+                        <h4>Chấp nhận thanh toán</h4>
+                        <img src="./assets/img/vnpay.png" width="50" height="50" loading="lazy" style="margin: 5px;" /><img src="./assets/img/visa.png" width="50" height="50" loading="lazy" style="margin: 5px;" />
+                        <img src="./assets/img/shopeepay.png" width="50" height="50" loading="lazy" style="margin: 5px;" /><img src="./assets/img/MBbank.png" width="50" height="50" loading="lazy" style="margin: 5px;" /> <br />
+                        <img src="./assets/img/vietcombank.png" width="170" height="56.67" loading="lazy" style="margin-top: 20px;" />
+                        
+                        <h4 style="margin-top: 40px;">Ứng dụng di động</h4>
+                        <div class="ft-app">
+                            <a rel="nofollow noreferrer" target="_blank">
+                                <img src="./assets/img/google_play.png"  width="160" height="49" loading="lazy" />
+                            </a>
+                            <a rel="nofollow noreferrer" target="_blank">
+                                <img src="./assets/img/ios_play.png"  width="160" height="49" loading="lazy" />
+                            </a>
+                        </div>
+                        <div class="mb-app" style="text-align: center;">
+                            <div class="android" style="margin-left: 50px;">
+                                <p style="text-align: center;">Android</p>
+                            </div>
+                            <div class="ios" style="margin-right: 60px;">
+                                <p>iOS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        
+    </footer>
+    </div>
+  </body>
+</html>
