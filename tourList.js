@@ -56,10 +56,9 @@ let card13 = new CardStruct("./assets/img/location_13.png", 390, "12/3/2024 - Gi
 let card14 = new CardStruct("./assets/img/location_14.png", 700, "30/3/2024 - Giờ đi: 08h00", "Hà Nội - Phú Quốc ( 5 ngày 4 đêm)", "7.890.000đ/ Khách", "Nơi khởi hành: Hà Nội", 12, false, "");
 let card15 = new CardStruct("./assets/img/location_15.png", 335, "12/3/2024 - Giờ đi: 12h30", "Hà Nội - Đà Lạt (4 ngày 3 đêm)", "5.150.000đ/ Khách", "Nơi khởi hành: Hà Nội", 4, false, "");
 let cardList = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15];
-let html = "";
 
-
-
+function renderCardList(){
+    let html = "";
     cardList.forEach((value) => {
             html += `<div class="col promotion-search-result__result__item animate__bounceIn animate__animated">
                                 <div class="card tour-item">
@@ -72,7 +71,7 @@ let html = "";
                                             </a>
                                             <span
                                                 class="tour-item__image-inner__icon-favorite">
-                                            <label><i class="icon icon--heart"></i></label>
+                                            <label><i class="fa-light fa-heart"></i></label>
                                         </span>
                                             <div class="tour-item__image-inner__summary position-absolute">
                                                 <div
@@ -115,7 +114,7 @@ let html = "";
                                         class="card-footer tour-item__footer px-3 mb-2 w-100 d-inline-flex justify-content-between align-items-center">
                                         <div
                                             class="tour-item__footer__add-to-compare d-inline-flex align-items-center addcomparegrid">
-                                            <i class="icon icon--plus pe-1"></i><input type="hidden"
+                                            <i class="fa-light fa-circle-plus"></i><input type="hidden"
                                                 value="6ca00847-8a4e-43c9-80fc-775e4c3cf4d8"><a href="#"
                                                 id="AddCompare_6ca00847-8a4e-43c9-80fc-775e4c3cf4d8">Thêm vào so sánh</a></div>
                                         <div class="tour-item__footer__available-seat d-inline-flex align-items-center">
@@ -128,6 +127,25 @@ let html = "";
         })
 
 cardContainer.innerHTML = html;
+}
+
+renderCardList();
+
+function getPrice(price){
+    return parseInt(price.split("đ")[0].replaceAll(".", ""));
+}
+
+sortPriceSelect.addEventListener('change', function (e) {
+    if(e.target.value == "asc"){
+        cardList.sort((a, b) => getPrice(a.price) - getPrice(b.price));
+        renderCardList();
+    } else {
+        cardList.sort((a, b) => getPrice(b.price) - getPrice(a.price));
+        renderCardList();
+    }
+})
+
+console.log(getPrice(card1.price));
 
 let locationNavigation = document.querySelectorAll('a[href="/tour_list.html"]')
         for (let i = 0; i < locationNavigation.length; i++) {
