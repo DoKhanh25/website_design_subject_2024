@@ -546,3 +546,30 @@
 :root .resultsList>div>div>div>div.G-5c[role="tab"][tabindex="0"]>.yuAt-pres-rounded {
     display: none !important;
 }
+
+
+.tour-detail .section-08 .left .table-price {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px 20px;
+  }
+  .tour-detail .section-08 .left .table-price .l1 {
+    width: 290px;
+  }
+  .tour-detail .section-08 .left .table-price .l2,
+  .tour-detail .section-08 .left .table-price .l3 {
+    width: 130px;
+  }
+  .tour-detail .section-08 .left .table-price tr th {
+    font-weight: 700;
+  }
+  .tour-detail .section-08 .left .table-price tr td,
+  .tour-detail .section-08 .left .table-price tr th {
+    padding: 10px 0;
+  }
+  .tour-detail .section-08 .left .table-price tr .t-price {
+    color: #e01600;
+  }
+  .tour-detail .section-08 .left .table-price tr.total td {
+    font-weight: 700;
+  }
