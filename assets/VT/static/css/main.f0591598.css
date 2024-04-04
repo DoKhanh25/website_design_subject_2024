@@ -43255,7 +43255,7 @@ footer .block h4 {
 .rs-picker-daterange .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
   display: none;
 }
-.css-1dimb5e-singleValue {
+._singleValue {
   margin-left: 0;
 }
 .rs-picker-default .rs-picker-toggle {
@@ -43297,11 +43297,11 @@ footer .block h4 {
 .rs-anim-fade.rs-anim-in {
   margin-left: -68px;
 }
-.css-1dimb5e-singleValue {
+._singleValue {
   padding: 0 !important;
   width: 90% !important;
 }
-.css-1dimb5e-singleValue,
+._singleValue,
 .css-qbdosj-Input {
   background: 0 0 !important;
   border: none;
@@ -43485,14 +43485,14 @@ footer .block h4 {
 .sidebar-inner .start-to-stop input {
   background: #fff;
 }
-.sidebar-inner .css-1dimb5e-singleValue,
+.sidebar-inner ._singleValue,
 .sidebar-inner .react-datepicker__input-container input {
   color: #2d4271 !important;
   font-weight: 400 !important;
   line-height: 1.5 !important;
   padding-left: 15px !important;
 }
-.sidebar-inner .css-1dimb5e-singleValue {
+.sidebar-inner ._singleValue {
   font-size: 15px !important;
 }
 .sidebar-inner .react-datepicker__input-container input {
@@ -61799,10 +61799,7 @@ svg {
 .search-mobile .searchbox-tour .input-search-location {
   border: 1px solid #e7e7e7;
 }
-::selection {
-  background: #ff002d;
-  color: #fff;
-}
+
 html body {
   overflow-x: hidden;
 }

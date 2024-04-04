@@ -29,7 +29,7 @@ $(document).ready(function () {
   });
 });
 
-    
+
 $(document).ready(function () {
     $(".slick-track-3").slick({
       slidesToShow: 10,

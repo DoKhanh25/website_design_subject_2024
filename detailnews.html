@@ -2,8 +2,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="robots" content="index, follow" />
-    
-        <!--Refactor-->
+
+
+        <link rel="stylesheet" href="./assets/css/detailnews.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -132,26 +133,23 @@
             <div class="news">
                 <div class="container">
                     <div class="row">
-                    <ul class="breadcrumbs__wrapper " itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                            <a itemprop="item" class="" href="./index.html">
-                                <span itemprop="name">Du lịch</span>
+                    <ul class="breadcrumbs__wrapper">
+                        <li>
+                            <a>
+                                <span>Du lịch</span>
                             </a>
-                            <meta itemprop="position" content="1">
                         </li>
-                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                            <i class="icon icon--chevron-right px-2"></i>
-                            <a itemprop="item" aria-current="page" class="active" href="./news.html">
-                                <span itemprop="name">Tin tức du lịch</span>
+                        » 
+                        <li>
+                            <a>
+                                <span>Tin tức du lịch</span>
                             </a>
-                            <meta itemprop="position" content="2">
                         </li>
-                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                            <i class="icon icon--chevron-right px-2"></i>
-                            <a itemprop="item" aria-current="page" class="active" href="/">
-                                <span itemprop="name">8 kiến trúc đẹp lộng lẫy trong mùa hoa anh đào trên hành trình du lịch Nhật Bản</span>
+                        »
+                        <li>
+                            <a>
+                                <span>8 kiến trúc đẹp lộng lẫy trong mùa hoa anh đào trên hành trình du lịch Nhật Bản</span>
                             </a>
-                            <meta itemprop="position" content="3">
                         </li>
                     </ul>
                 </div>
@@ -160,9 +158,9 @@
             <div class="detail-news">
                 <section class="news_heading">
                     <div class="container-fluid">
-                        <div class="row py-lg-5">
-                            <img class="container-fluid" src="assets/img/banner-detailnews.jpg">
-                            <div class="container p-5 mb-5">
+                        <div class="banner-detailnews row py-lg-5">
+                            <img class="container" src="assets/img/banner-detailnews.jpg">
+                            <div class="container p-5 mb-5 text-justify">
                                 <p>Mùa xuân là thời điểm tuyệt vời để du lịch Nhật Bản. Không chỉ được chiêm ngưỡng cảnh sắc thiên nhiên rực rỡ, du khách còn có cơ hội khám phá những kiến trúc độc đáo 
                                     hòa quyện cùng sắc hoa anh đào thơ mộng. Trong đó Fukushima là địa điểm lý tưởng để thưởng thức vẻ đẹp này. Dưới đây là 8 gợi ý cho bạn khám phá trong hành trình du 
                                     lịch Nhật Bản ngắm hoa anh đào.
@@ -178,21 +176,21 @@
                 </section>
 
                 <section class="news-detail-fukushima">
-                    <div class="container-fluid text-center">
+                    <div class="text-detail container">
                         <h1>Fukushima</h1>
-                        <div class="row text-center py-lg-5">
+                        <div class="row py-lg-5">
                             <div class="col-6">
                                 <img class="container-fluid" src="assets/img/fukushima-photo-1.jpg">
                             </div>
-                            <div class="col-6 text-center bg-shadow">
+                            <div class="col-6 text-justify bg-shadow">
                                 <h2><strong>Ga Yunokami Onsen</strong></h2>
                                 <p>Yunokami Onsen là công trình nhà ga duy nhất có mái tranh ở Nhật Bản. Vào cuối tháng 4, khoảng 300 cây hoa anh đào ở đây bắt đầu nở rộ xung quanh công trình nhà ga này, 
                                     bao gồm cả các cây hoa anh đào Somei Yoshino khác nhau. Đến đây, bạn có thể vừa ngắm nhìn những cánh hoa anh đào bay trong gió, vừa có thể tận hưởng việc ngâm chân vô 
                                     cùng khoan khoái khi chờ tàu tại nhà ga này.</p>
                             </div>
                         </div>
-                        <div class="row text-center py-lg-5">
-                            <div class="col-6 text-center bg-shadow">
+                        <div class="row py-lg-5">
+                            <div class="col-6 text-justify bg-shadow">
                                 <h2><strong>Thành Hạc trắng Tsurugajo</strong></h2>
                                 <p>Thành Hạc trắng Tsuruga được bình chọn là một trong những địa điểm ngắm hoa anh đào đẹp nhất ở Fukushima. Tòa lâu đài kỳ vĩ này được xây dựng vào thế kỉ XV, đây là một 
                                     trong những tòa thành cuối cùng của Samurai còn tồn tại đến ngày nay. Thành Tsurugajo trồng rất nhiều cây hoa anh đào xung quanh. Đặc biệt, vào mùa xuân, khoảng 1000 
@@ -205,11 +203,11 @@
                                 <img class="container-fluid" src="assets/img/fukushima-photo-2.jpg">
                             </div>
                         </div>
-                        <div class="row text-center py-lg-5">
+                        <div class="row py-lg-5">
                             <div class="col-6">
                                 <img class="container-fluid" src="assets/img/fukushima-photo-3.jpg">
                             </div>
-                            <div class="col-6 text-center bg-shadow">
+                            <div class="col-6 text-justify bg-shadow">
                                 <h2><strong>Dinh thự của các Samurai</strong></h2>
                                 <p>Với vị trí rất gần Thành Hạc trắng Tsurugajo, chỉ mất khoảng 5 phút di chuyển, một trong những địa điểm ngắm hoa anh đào đẹp nhất ở Fukushima – Dinh thự Samurai là một cơ 
                                     sở du lịch mô phỏng lại dinh thự samurai của lãnh chúa vùng Aizu vào thời Edo. Đây là nơi vô cùng lý tưởng để bạn có thể cảm nhận cuộc sống của các samurai trước đây, và 
@@ -221,10 +219,10 @@
                 </section>
 
                 <section class="news-detail-takamatsu">
-                    <div class="container-fluid text-center">
+                    <div class="text-detail container">
                         <h1>Takamatsu</h1>
-                        <div class="row text-center py-lg-5">
-                            <div class="col-6 text-center bg-shadow">
+                        <div class="row py-lg-5">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
                                 <h2><strong>Công viên Tamamo</strong></h2>
                                 <p>Một trong những điểm đến ở Takamatsu nổi tiếng không kém Ritsurin là công viên Tamamo, được tu sửa lại từ đống đổ nát của lâu đài Takamatsu và đã được công nhận là một 
                                     di tích lịch sử quốc gia. Tại công viên này có một cái hào đặt trong tòa nhà nuôi những con cá biển như: cá tráp, cá bơn bơi lội rất thư thản, nơi đã được chỉ định 
@@ -234,17 +232,17 @@
                                 <img class="container-fluid" src="assets/img/takamatsu-photo-1.jpg">
                             </div>
                         </div>
-                        <div class="row text-center py-lg-5">
+                        <div class="row py-lg-5">
                             <div class="col-6">
                                 <img class="container-fluid" src="assets/img/takamatsu-photo-2.jpg">
                             </div>
-                            <div class="col-6 text-center bg-shadow">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
                                 <p>Các bạn có thể tận hưởng trải nghiệm cho cá ăn và ngắm hoa anh đào tại đây. Trong mùa ngắm hoa anh đào, Sakura-no-Baba mở cửa miễn phí cho công chúng vào ban đêm, khiến 
                                     nơi đây trở thành địa điểm thư giãn phổ biến cho người dân.</p>
                             </div>
                         </div>
-                        <div class="row text-center py-lg-5">
-                            <div class="col-6 text-center bg-shadow">
+                        <div class="row py-lg-5">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
                                 <h2><strong>Lâu đài Takamatsu</strong></h2>
                                 <p>Lâu đài cổ kính này được bao quanh bởi những con hào và khu vườn rộng lớn, nơi hoa anh đào nở rộ vào mùa xuân. Bạn có thể đi dạo dọc theo con hào, leo lên đỉnh lâu đài 
                                     để ngắm nhìn toàn cảnh thành phố Takamatsu và thưởng thức vẻ đẹp của hoa anh đào. Những hàng cây anh đào cổ thụ xòe tán lớn, phủ kín hoa anh đào, tạo nên cảnh sắc 
@@ -259,13 +257,13 @@
                 </section>
 
                 <section class="news-detail-tokyo-osaka-yamanashi">
-                    <div class="container-fluid text-center">
+                    <div class="text-detail container">
                         <h1>Tokyo - Osaka - Yamanashi</h1>
-                        <div class="row text-center py-lg-5">
+                        <div class="row py-lg-5">
                             <div class="col-6">
                                 <img class="container-fluid" src="assets/img/tokyo-photo-1.jpg">
                             </div>
-                            <div class="col-6 text-center bg-shadow">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
                                 <h2><strong>Lâu đài OSAKA</strong></h2>
                                 <p>Lâu đài Osaka, một trong 10 lâu đài đẹp nhất của Nhật Bản, đặt tại thành phố Osaka, Nhật Bản, là biểu tượng văn hóa quan trọng và lịch sử của khu vực. 
                                     Được xây dựng vào cuối thế kỷ 16 trong thời kỳ Azuchi-Momoyama, lâu đài này đóng vai trò quan trọng trong việc thống nhất đất nước. Có kiến trúc ấn tượng, 
@@ -276,8 +274,8 @@
                                     phổ biến nhất. Không chỉ là một biểu tượng của lịch sử và văn hóa, lâu đài Osaka còn là điểm đến tuyệt vời để ngắm nhìn vẻ đẹp của hoa anh đào trong mùa xuân tại xứ sở Phù Tang.</p>
                             </div>
                         </div>
-                        <div class="row text-center py-lg-5">
-                            <div class="col-6 text-center bg-shadow">
+                        <div class="row py-lg-5">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
                                 <h2><strong>Làng cổ Oshino Hakkai</strong></h2>
                                 <p>Nằm bên chân núi phía tây của tỉnh Yamanashi, làng cổ Oshino Hakkai mang đậm dấu ấn kiến trúc truyền thống Nhật Bản, hòa quyện với khung cảnh thanh bình và tuyệt đẹp. 
                                     Những hồ lớn trong làng được trang trí bởi những chiếc cầu đẹp mắt, tạo nên một phong cảnh độc đáo và hấp dẫn. Đặc biệt, làng cổ Oshino Hakkai là điểm ngắm nhìn tốt 
@@ -290,22 +288,22 @@
                                 <img class="container-fluid" src="assets/img/tokyo-photo-2.jpg">
                             </div>
                         </div>
-                        <div class="row text-center py-lg-5">
+                        <div class="row py-lg-5">
                             <div class="col-6">
                                 <img class="container-fluid" src="assets/img/tokyo-photo-3.jpg">
                             </div>
-                            <div class="col-6 text-center bg-shadow">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
                                 <h2><strong>Đền Yasukuni (Kudanshita)</strong></h2>
                                 <p>Trong khuôn viên đền Yasukuni ở Tokyo, có khoảng 500 cây anh đào được trồng, tạo nên một khung cảnh đẹp mê hồn không kém gì đền Meiji. Mặc dù được xây dựng vào năm 1869, 
                                     đền Yasukuni vẫn toát lên vẻ đẹp cổ kính và thanh nhã của kiến trúc kiểu Nhật. Sự hòa quyện giữa lối kiến trúc truyền thống và vẻ đẹp của hoa anh đào tạo nên một không 
-                                    gian lãng mạn, khiến du khách cảm thấy như được trở về quá khứ trong không gian yên bình của đền. Vào  mùa hoa anh đào, khuôn viên đền còn mở những quầy bán đồ ăn để 
+                                    gian lãng mạn, khiến du khách cảm thấy như được trở về quá khứ trong không gian yên bình của đền. Vào mùa hoa anh đào, khuôn viên đền còn mở những quầy bán đồ ăn để 
                                     phục vụ du khách ngắm hoa. Vị trí của đền gần Hoàng cung, giúp du khách tiết kiệm thời gian di chuyển khi muốn tận hưởng vẻ đẹp của hoa anh đào tại cả hai địa điểm.</p>
                             </div>
                         </div>
                     </div>
                 </section>
                 
-                <div class="container p-5 mb-5">
+                <div class="container p-5 mb-5 text-justify">
                     <p>Ngoài 8 địa điểm trên, bạn có thể tham khảo thêm một số địa điểm ngắm hoa anh đào khác ở Takamatsu và Fukushima như: Vườn Ritsurin-koen ở Takamatsu hoặc Công viên Hanamiyama ở Fukushima...
                        <br>
                        <br>
@@ -317,7 +315,7 @@
 
             <footer>
                 <section class="footer-top">
-                    <div class="container bg-shadow">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-4 col-6 block ">
                                 <h4>Liên hệ</h4>
@@ -330,34 +328,29 @@
                                 <h4>Mạng xã hội</h4>
                                 <ul class="socials">
                                     <li class="social">
-                                        <a href="#" target="_blank" rel="nofollow noreferrer" name="facebook" title="facebook">
-                                            <!-- <i class="fab fa-facebook-f"></i> -->
-                                            <embed src="./assets/svg/facebook.svg" type="">
+                                        <a href="#/" target="_blank" name="facebook" title="facebook">
+                                            <img src="./assets/svg/facebook.svg" type="">
                                         </a>
                                     </li>
                                     <li class="social">
-                                        <a href="#" target="_blank" rel="nofollow noreferrer" name="instagram" title="instagram">
-                                            <!-- <i class="fab fa-instagram"></i> -->
-                                            <embed src="./assets/svg/instagram.svg" type="">
+                                        <a href="#/" target="_blank" name="instagram" title="instagram">
+                                            <img src="./assets/svg/instagram.svg" type="">
                                         </a>
                                     </li>
                                     <li class="social">
-                                        <a href="#" target="_blank" rel="nofollow noreferrer" name="viber" title="viber">
-                                            <!-- <i class="fab fa-viber"></i> -->
-                                            <embed src="./assets/svg/viper.svg" type="">
+                                        <a href="#/" target="_blank" name="viber" title="viber">
+                                            <img src="./assets/svg/viper.svg" type="">
                                         </a>
                                     </li>
                                     <li class="social">
-                                        <a href="#" target="_blank" rel="nofollow noreferrer" name="zalo" title="zalo">
-                                            <!-- <i class="icon icon--zalo"></i> -->
-                                            <embed src="./assets/svg/zalo.svg" type="">
+                                        <a href="#/" target="_blank" name="zalo" title="zalo">
+                                            <img src="./assets/svg/zalo.svg" type="">
                                                 
                                         </a>
                                     </li>
                                     <li class="social">
-                                        <a href="#" target="_blank" rel="nofollow noreferrer" name="youtube" title="youtube">
-                                            <!-- <i class="fab fa-youtube"></i> -->
-                                            <embed src="./assets/svg/youtube.svg" type="">
+                                        <a href="#/" target="_blank" name="youtube" title="youtube">
+                                            <img src="./assets/svg/youtube.svg" type="">
                                         </a>
                                     </li>
                                 </ul>
@@ -369,7 +362,7 @@
                             <div class="col-md-4 col-6 block ">
                                 <h4>Thông tin</h4>
                                 <ul class="menu">
-                                    <li class="menu-item"><a href="#" target="_blank" rel="nofollow noreferrer">Tạp chí sử dụng</a></li>
+                                    <li class="menu-item"><a href="#" target="_blank">Tạp chí sử dụng</a></li>
                                     <li class="menu-item"><a class="" href="#">Cẩm nang du lịch</a></li>
                                     <li class="menu-item"><a class="" href="#">Tin tức</a></li>
                                     <li class="menu-item"><a class="" href="#">Sitemap</a></li>
@@ -386,10 +379,10 @@
                                 
                                 <h4 style="margin-top: 40px;">Ứng dụng di động</h4>
                                 <div class="ft-app">
-                                    <a rel="nofollow noreferrer" target="_blank">
+                                    <a target="_blank">
                                         <img src="./assets/img/google_play.png"  width="160" height="49" loading="lazy" />
                                     </a>
-                                    <a rel="nofollow noreferrer" target="_blank">
+                                    <a target="_blank">
                                         <img src="./assets/img/ios_play.png"  width="160" height="49" loading="lazy" />
                                     </a>
                                 </div>
@@ -405,6 +398,8 @@
                         </div>
                     </div>
                 </section>
+           
+                
             </footer>
         </div>    
     </body>

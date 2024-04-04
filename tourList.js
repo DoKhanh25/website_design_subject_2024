@@ -15,7 +15,6 @@ let middleArea = ["Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Quảng Bình"
 let southArea = ["Đồng Nai", "Bà Rịa - Vũng Tàu", "TP. Hồ Chí Minh", "Côn Đảo", "Tây Ninh"]
 
 
-
 if(southEastArea.includes(locationStorage)){
     $(".area_drop_span").innerText = "Du lịch tây nam bộ";
 }
@@ -64,7 +63,7 @@ function renderCardList(){
                                 <div class="card tour-item">
                                     <div class="position-relative">
                                         <div class="tour-item__image">
-                                            <a>
+                                            <a href="tour_detail.html">
                                                 <img
                                                     src="${value.imagePath}"
                                                     class="card-img-top img-fluid"/>
@@ -101,11 +100,14 @@ function renderCardList(){
                                                     class="font-weight-bold">${value.startLocation.replace("Hà Nội", locationStorage)}</span></p>
 
                                                 <div class="tour-item__price--current">
-                                                    <div class="btn-book"><a href="#" title="Đặt ngay"
+                                                    <div class="btn-book"><a href="booking.html" title="Đặt ngay"
                                                             class="btn btn-primary btn-sm btnOptionTour"><i
                                                                 class="fal fa-shopping-cart"></i>Đặt ngay</a></div>
-                                                    <div class="btn-block"><a
-                                                            class="btn product-item__summary__btn-login product-item__summary__btn-logins">Xem chi tiết</a></div>
+                                                    <div class="btn-block">
+                                                        <a href="tour_detail.html" class="btn product-item__summary__btn-login product-item__summary__btn-logins">
+                                                            Xem chi tiết
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
