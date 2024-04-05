@@ -8,6 +8,10 @@
     url(/static/media/icons.72e1350736a65136ddde.ttf) format("truetype"),
     url(/static/media/icons.880b3f8637e596cbb068.svg#icons) format("svg");
 }
+label.error {
+  color: red !important;
+  margin-top: 4px;
+}
 
 .clearfix:after {
   clear: both;
