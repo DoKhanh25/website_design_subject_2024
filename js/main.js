@@ -49,3 +49,5 @@ let fn = {
 fn.slick();
 fn.headerNavigation();
 fn.resizeImage();
+
+
